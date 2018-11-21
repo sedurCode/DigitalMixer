@@ -22120,6 +22120,13 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <part name="+3V19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="D1" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D2" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D3" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D4" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D5" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D6" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D7" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
+<part name="D8" library="SamacSys_Parts" deviceset="BAV99,215" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24832,9 +24839,37 @@ Consider replacing with USBj</text>
 <instance part="GND121" gate="1" x="185.42" y="48.26" smashed="yes">
 <attribute name="VALUE" x="182.88" y="45.72" size="1.778" layer="96"/>
 </instance>
-<instance part="D1" gate="G$1" x="213.36" y="121.92" smashed="yes">
-<attribute name="NAME" x="293.37" y="129.54" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="293.37" y="127" size="1.778" layer="96" align="center-left"/>
+<instance part="D1" gate="G$1" x="294.64" y="154.94" smashed="yes">
+<attribute name="NAME" x="374.65" y="162.56" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="160.02" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D2" gate="G$1" x="294.64" y="142.24" smashed="yes">
+<attribute name="NAME" x="374.65" y="149.86" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="147.32" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D3" gate="G$1" x="294.64" y="129.54" smashed="yes">
+<attribute name="NAME" x="374.65" y="137.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="134.62" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D4" gate="G$1" x="294.64" y="116.84" smashed="yes">
+<attribute name="NAME" x="374.65" y="124.46" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="121.92" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D5" gate="G$1" x="294.64" y="104.14" smashed="yes">
+<attribute name="NAME" x="374.65" y="111.76" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="109.22" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D6" gate="G$1" x="294.64" y="91.44" smashed="yes">
+<attribute name="NAME" x="374.65" y="99.06" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="96.52" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D7" gate="G$1" x="294.64" y="78.74" smashed="yes">
+<attribute name="NAME" x="374.65" y="86.36" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="83.82" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="D8" gate="G$1" x="294.64" y="66.04" smashed="yes">
+<attribute name="NAME" x="374.65" y="73.66" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="374.65" y="71.12" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -25133,6 +25168,11 @@ Consider replacing with USBj</text>
 <wire x1="121.92" y1="152.4" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
 <junction x="121.92" y="165.1"/>
 </segment>
+<segment>
+<pinref part="D1" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="154.94" x2="388.62" y2="154.94" width="0.1524" layer="91"/>
+<label x="388.62" y="154.94" size="2.54" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="AIN0+" class="0">
 <segment>
@@ -25147,6 +25187,11 @@ Consider replacing with USBj</text>
 <pinref part="C47" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="144.78" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
 <junction x="121.92" y="134.62"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="142.24" x2="388.62" y2="142.24" width="0.1524" layer="91"/>
+<label x="388.62" y="142.24" size="2.54" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -25612,6 +25657,11 @@ Consider replacing with USBj</text>
 <wire x1="121.92" y1="83.82" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 <junction x="121.92" y="96.52"/>
 </segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="129.54" x2="388.62" y2="129.54" width="0.1524" layer="91"/>
+<label x="388.62" y="129.54" size="2.54" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="AIN1+" class="0">
 <segment>
@@ -25626,6 +25676,11 @@ Consider replacing with USBj</text>
 <pinref part="C56" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="76.2" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
 <junction x="121.92" y="66.04"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="116.84" x2="388.62" y2="116.84" width="0.1524" layer="91"/>
+<label x="388.62" y="116.84" size="2.54" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AIN2-" class="0">
@@ -25642,6 +25697,11 @@ Consider replacing with USBj</text>
 <wire x1="261.62" y1="154.94" x2="261.62" y2="167.64" width="0.1524" layer="91"/>
 <junction x="261.62" y="167.64"/>
 </segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="104.14" x2="388.62" y2="104.14" width="0.1524" layer="91"/>
+<label x="388.62" y="104.14" size="2.54" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="AIN2+" class="0">
 <segment>
@@ -25656,6 +25716,11 @@ Consider replacing with USBj</text>
 <pinref part="C67" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="147.32" x2="261.62" y2="137.16" width="0.1524" layer="91"/>
 <junction x="261.62" y="137.16"/>
+</segment>
+<segment>
+<pinref part="D6" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="91.44" x2="388.62" y2="91.44" width="0.1524" layer="91"/>
+<label x="388.62" y="91.44" size="2.54" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="AIN3-" class="0">
@@ -25672,6 +25737,11 @@ Consider replacing with USBj</text>
 <wire x1="261.62" y1="83.82" x2="261.62" y2="96.52" width="0.1524" layer="91"/>
 <junction x="261.62" y="96.52"/>
 </segment>
+<segment>
+<pinref part="D7" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="78.74" x2="388.62" y2="78.74" width="0.1524" layer="91"/>
+<label x="388.62" y="78.74" size="2.54" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="AIN3+" class="0">
 <segment>
@@ -25686,6 +25756,83 @@ Consider replacing with USBj</text>
 <pinref part="C78" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="76.2" x2="261.62" y2="66.04" width="0.1524" layer="91"/>
 <junction x="261.62" y="66.04"/>
+</segment>
+<segment>
+<pinref part="D8" gate="G$1" pin="CATHODE_(DIODE_1),_ANODE_(DIODE_2)"/>
+<wire x1="378.46" y1="66.04" x2="388.62" y2="66.04" width="0.1524" layer="91"/>
+<label x="388.62" y="66.04" size="2.54" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$235" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="294.64" y1="154.94" x2="289.56" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="154.94" x2="289.56" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="289.56" y1="142.24" x2="294.64" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$236" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="294.64" y1="152.4" x2="292.1" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="152.4" x2="292.1" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="292.1" y1="139.7" x2="294.64" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$237" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="294.64" y1="129.54" x2="289.56" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="129.54" x2="289.56" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="289.56" y1="116.84" x2="294.64" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$238" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="294.64" y1="127" x2="292.1" y2="127" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="127" x2="292.1" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="292.1" y1="114.3" x2="294.64" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$239" class="0">
+<segment>
+<pinref part="D5" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="294.64" y1="104.14" x2="289.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="104.14" x2="289.56" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="289.56" y1="91.44" x2="294.64" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$240" class="0">
+<segment>
+<pinref part="D5" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="294.64" y1="101.6" x2="292.1" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="101.6" x2="292.1" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="D6" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="292.1" y1="88.9" x2="294.64" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$241" class="0">
+<segment>
+<pinref part="D7" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="294.64" y1="78.74" x2="289.56" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="78.74" x2="289.56" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="D8" gate="G$1" pin="ANODE_(DIODE_1)"/>
+<wire x1="289.56" y1="66.04" x2="294.64" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$242" class="0">
+<segment>
+<pinref part="D7" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="294.64" y1="76.2" x2="292.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="76.2" x2="292.1" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="D8" gate="G$1" pin="CATHODE_(DIODE_2)"/>
+<wire x1="292.1" y1="63.5" x2="294.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
