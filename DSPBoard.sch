@@ -22688,11 +22688,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SV1" gate="G$1" pin="6"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="22.86" y1="165.1" x2="20.32" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="4"/>
+<wire x1="22.86" y1="167.64" x2="20.32" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="167.64" x2="20.32" y2="165.1" width="0.1524" layer="91"/>
+<junction x="20.32" y="165.1"/>
+<pinref part="SV1" gate="G$1" pin="8"/>
+<wire x1="22.86" y1="162.56" x2="20.32" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="162.56" x2="20.32" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="5"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="40.64" y1="165.1" x2="38.1" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="7"/>
+<wire x1="38.1" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="162.56" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
+<junction x="40.64" y="165.1"/>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="38.1" y1="167.64" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="167.64" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
