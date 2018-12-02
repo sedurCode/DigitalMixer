@@ -1,0 +1,32 @@
+Circuit: * C:\Users\sedur\Documents\EAGLE\projects\DigitalMixer\input differential circuit model.asc
+
+Instance "m:u4:4": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u4:3": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u4:2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u4:1": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:4": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:3": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:2": Length shorter than recommended for a level 2 MOSFET.
+Instance "m:u3:1": Length shorter than recommended for a level 2 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+
+
+Date: Sun Dec 02 21:02:20 2018
+Total elapsed time: 0.118 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2129
+traniter = 2117
+tranpoints = 1057
+accept = 1054
+rejected = 3
+matrix size = 107
+fillins = 66
+solver = Normal
+Thread vector: 12.7/6.9[2] 3.0/2.3[2] 2.6/1.7[2] 0.5/1.2[1]  2592/500
+Matrix Compiler1: 10.05 KB object code size  2.0/0.8/[0.5]
+Matrix Compiler2: 11.17 KB object code size  0.8/1.0/[0.6]
+
