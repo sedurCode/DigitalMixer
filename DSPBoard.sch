@@ -23301,6 +23301,7 @@ Based on the following sources:
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="121.92" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
 <junction x="198.12" y="116.84"/>
+<label x="205.74" y="121.92" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="C40" gate="G$1" pin="2"/>
@@ -23498,6 +23499,7 @@ Based on the following sources:
 <wire x1="160.02" y1="132.08" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="157.48" x2="144.78" y2="157.48" width="0.1524" layer="91"/>
 <junction x="144.78" y="157.48"/>
+<label x="190.5" y="139.7" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -23651,9 +23653,9 @@ Consider replacing with USBj</text>
 <attribute name="NAME" x="172.72" y="170.18" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="172.72" y="165.1" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="JP4" gate="G$1" x="149.86" y="154.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="152.4" y="157.48" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="127" y="165.1" size="1.778" layer="96" font="vector" align="top-left"/>
+<instance part="JP4" gate="G$1" x="152.4" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="149.86" y="160.02" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="175.26" y="152.4" size="1.778" layer="96" font="vector" rot="R180" align="top-left"/>
 </instance>
 <instance part="JP5" gate="G$1" x="175.26" y="137.16" smashed="yes">
 <attribute name="NAME" x="172.72" y="139.7" size="1.778" layer="95" font="vector"/>
@@ -23975,12 +23977,13 @@ Consider replacing with USBj</text>
 </net>
 <net name="S_AUX_ADC1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="AUXADC1_9"/>
-<wire x1="170.18" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
 <label x="144.78" y="149.86" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="149.86" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
-<junction x="149.86" y="149.86"/>
+<pinref part="U$1" gate="G$1" pin="AUXADC1_9"/>
+<wire x1="170.18" y1="149.86" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="149.86" x2="144.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="157.48" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<junction x="152.4" y="149.86"/>
 </segment>
 </net>
 <net name="S_AUX_ADC2" class="0">
@@ -24030,9 +24033,10 @@ Consider replacing with USBj</text>
 </net>
 <net name="ENCODER0_0" class="0">
 <segment>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
-<label x="139.7" y="160.02" size="1.778" layer="95" rot="R180" xref="yes"/>
+<label x="119.38" y="162.56" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="162.56" x2="119.38" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="167.64" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENCODER0_1" class="0">
@@ -24238,7 +24242,7 @@ Consider replacing with USBj</text>
 <attribute name="VALUE" x="224.79" y="70.358" size="1.778" layer="96"/>
 </instance>
 <instance part="R27" gate="G$1" x="162.56" y="152.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="166.37" y="150.9014" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="161.29" y="150.9014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="166.37" y="155.702" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="IC1" gate="G$1" x="48.26" y="132.08" smashed="yes">
@@ -24917,6 +24921,11 @@ Consider replacing with USBj</text>
 <wire x1="129.54" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <label x="127" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="DSDATA2"/>
+<wire x1="60.96" y1="73.66" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<label x="60.96" y="60.96" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="DSDATA1" class="0">
 <segment>
@@ -24947,6 +24956,11 @@ Consider replacing with USBj</text>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="157.48" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
 <label x="154.94" y="147.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="ASDATA2"/>
+<wire x1="78.74" y1="73.66" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
+<label x="78.74" y="50.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ASDATA1" class="0">
